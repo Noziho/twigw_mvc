@@ -1,0 +1,17 @@
+body {
+    background: indianred;
+}
+
+
+.number1 {
+    background: black;
+    color: white;
+}
+
+.number2 {
+    background: #6d3f3f;
+}
+
+.default-class {
+    background: #664566;
+}

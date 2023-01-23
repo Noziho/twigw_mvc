@@ -1,0 +1,17 @@
+{
+    "name": "noziho/twigw_mvc",
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Noziho",
+            "email": "noah.decroix3@gmail.com"
+        }
+    ],
+    "require": {
+        "twig/twig": "^3.5"
+    }
+}

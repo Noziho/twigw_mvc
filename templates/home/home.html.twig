@@ -1,0 +1,18 @@
+{% extends 'base.html.twig' %}
+{% block title_page %}Ma super home page{% endblock %}
+{% block css %}
+    <link rel="stylesheet" href="/assets/css/home.css">
+{% endblock %}
+{% block body %}
+    <h1>
+        Ma titre
+    </h1>
+
+    {% set number1 = ['1', '2', '3', '4'] %}
+    {% include '_partials/_items.html.twig' with {items: number1} %}
+
+
+    {% set number2 = ['5', '6', '7', '8'] %}
+    {% include '_partials/_items.html.twig' with {items: number2, class:'number2'} %}
+
+{% endblock %}
