@@ -9,7 +9,8 @@ class homeController extends Controller
     {
         $this->render('home/home.html.twig', [
             'hobbies' => ['Ah', 'ça', 'oui', '!'],
-            'smth' => ['1', '2', '3']
+            'smth' => ['1', '2', '3'],
+            'nb' => 222.22222222,
         ]);
 
     }
