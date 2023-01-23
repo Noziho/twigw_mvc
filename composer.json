@@ -12,6 +12,7 @@
         }
     ],
     "require": {
-        "twig/twig": "^3.5"
+        "twig/twig": "^3.5",
+        "symfony/error-handler": "^6.2"
     }
 }

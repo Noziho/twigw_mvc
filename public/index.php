@@ -1,7 +1,18 @@
 <?php
 
-use App\Controller\homeController;
+use App\Router;
+use Symfony\Component\ErrorHandler\Debug;
 
 require_once __DIR__ . '/../vendor/autoload.php';
+require_once __DIR__ . '/../Router.php';
 
-(new homeController())->home();
+
+Debug::enable();
+
+
+try {
+    Router::route();
+}
+catch (ReflectionException $e) {
+    echo "Une erreur est survenu avec le rooter";
+}

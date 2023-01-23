@@ -66,26 +66,8 @@ class __TwigTemplate_31bf9565c94f2a14dad32c887a7c4698 extends Template
         $macros = $this->macros;
         // line 7
         echo "    <h1>
-        Ma titre
+        Home W/Router
     </h1>
-
-    ";
-        // line 11
-        $context["number1"] = [0 => "1", 1 => "2", 2 => "3", 3 => "4"];
-        // line 12
-        echo "    ";
-        $this->loadTemplate("_partials/_items.html.twig", "home/home.html.twig", 12)->display(twig_array_merge($context, ["items" => (isset($context["number1"]) || array_key_exists("number1", $context) ? $context["number1"] : (function () { throw new RuntimeError('Variable "number1" does not exist.', 12, $this->source); })())]));
-        // line 13
-        echo "
-
-    ";
-        // line 15
-        $context["number2"] = [0 => "5", 1 => "6", 2 => "7", 3 => "8"];
-        // line 16
-        echo "    ";
-        $this->loadTemplate("_partials/_items.html.twig", "home/home.html.twig", 16)->display(twig_array_merge($context, ["items" => (isset($context["number2"]) || array_key_exists("number2", $context) ? $context["number2"] : (function () { throw new RuntimeError('Variable "number2" does not exist.', 16, $this->source); })()), "class" => "number2"]));
-        // line 17
-        echo "
 ";
     }
 
@@ -101,7 +83,7 @@ class __TwigTemplate_31bf9565c94f2a14dad32c887a7c4698 extends Template
 
     public function getDebugInfo()
     {
-        return array (  88 => 17,  85 => 16,  83 => 15,  79 => 13,  76 => 12,  74 => 11,  68 => 7,  64 => 6,  59 => 4,  55 => 3,  48 => 2,  37 => 1,);
+        return array (  68 => 7,  64 => 6,  59 => 4,  55 => 3,  48 => 2,  37 => 1,);
     }
 
     public function getSourceContext()
@@ -113,16 +95,8 @@ class __TwigTemplate_31bf9565c94f2a14dad32c887a7c4698 extends Template
 {% endblock %}
 {% block body %}
     <h1>
-        Ma titre
+        Home W/Router
     </h1>
-
-    {% set number1 = ['1', '2', '3', '4'] %}
-    {% include '_partials/_items.html.twig' with {items: number1} %}
-
-
-    {% set number2 = ['5', '6', '7', '8'] %}
-    {% include '_partials/_items.html.twig' with {items: number2, class:'number2'} %}
-
 {% endblock %}", "home/home.html.twig", "/home/noziho/PhpstormProjects/twigw_mvc/templates/home/home.html.twig");
     }
 }

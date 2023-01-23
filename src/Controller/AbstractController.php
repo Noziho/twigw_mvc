@@ -9,7 +9,7 @@ use Twig\Error\SyntaxError;
 use Twig\Extension\DebugExtension;
 use Twig\Loader\FilesystemLoader;
 
-abstract class Controller
+abstract class AbstractController
 {
     private static ?Environment $twigInstance = null;
     private static ?FilesystemLoader $twigLoader = null;
@@ -21,7 +21,7 @@ abstract class Controller
      * @throws RuntimeError
      * @throws SyntaxError
      */
-    public function render (...$params): void
+    public static function render (...$params): void
     {
         try {
             echo self::getTwig()->render(...$params);
@@ -38,7 +38,7 @@ abstract class Controller
      * Return Twig instance.
      * @return Environment
      */
-    public function getTwig(): Environment
+    public static function getTwig(): Environment
     {
         if (null === self::$twigInstance) {
             if (null === self::$twigLoader) {
@@ -64,6 +64,8 @@ abstract class Controller
     {
         return self::$twigLoader;
     }
+
+    public abstract function index ();
 
 
 }
